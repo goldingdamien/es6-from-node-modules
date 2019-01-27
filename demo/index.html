@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <script type="module">
+      import mustache from '../node_modules/mustache/bundle.js'
+      import jsClasses from '../node_modules/js-classes/bundle.js'
+
+      const mustacheText = `
+      Mustache name: ${mustache.name}<br>
+      Mustache version: ${mustache.version}
+      `
+
+      const keys = Object.keys(jsClasses)
+      const jsClassesText = `
+      jsClasses keys: ${keys}
+      `
+
+      document.getElementById('output').innerHTML = `
+      ${mustacheText}<br><br>
+      ${jsClassesText}
+      `
+    </script>
+  </head>
+  <body>
+    <h1>ES6 From node_modules test</h1>
+    <div id="output"></div>
+  </body>
+</html>

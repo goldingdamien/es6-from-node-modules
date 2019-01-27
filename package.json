@@ -1,0 +1,16 @@
+{
+  "name": "es6-from-node-modules",
+  "version": "1.0.0",
+  "description": "Converts from commonJS modules in node_modules to es6 module.",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "Damien Golding",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^16.2.3",
+    "fs-extra": "^7.0.1",
+    "js-classes": "git+https://github.com/goldingdamien/js-classes.git",
+    "mustache": "^3.0.1"
+  }
+}
